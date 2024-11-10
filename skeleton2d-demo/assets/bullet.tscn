@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://qrsf6o56sllg"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_6ndwv"]
+[ext_resource type="Texture2D" uid="uid://45da3acddeu2" path="res://assets/Prop_5.png" id="2_wpxen"]
+
+[node name="bullet" type="RigidBody2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_6ndwv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_wpxen")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.03, 0.03)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck0p16qkyqhju"]
+
+[ext_resource type="Script" path="res://score.gd" id="1_mu7qk"]
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+script = ExtResource("1_mu7qk")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -152.0
+offset_top = 6.0
+offset_right = -112.0
+offset_bottom = 29.0

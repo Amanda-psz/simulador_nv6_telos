@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=3 uid="uid://c1pvhk3lm3xrm"]
+
+[ext_resource type="Script" path="res://enemy/Enemy.gd" id="1_m21tl"]
+[ext_resource type="Texture2D" uid="uid://d1lcekxjqk51g" path="res://enemy/Plent/Idle.png" id="2_kdurf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_waplq"]
+atlas = ExtResource("2_kdurf")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lcgo"]
+atlas = ExtResource("2_kdurf")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t2n6"]
+atlas = ExtResource("2_kdurf")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omvay"]
+atlas = ExtResource("2_kdurf")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52df2"]
+atlas = ExtResource("2_kdurf")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvbf6"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_waplq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lcgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t2n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omvay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52df2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t7y4v"]
+radius = 17.0
+height = 52.0
+
+[node name="Plent" type="CharacterBody2D"]
+script = ExtResource("1_m21tl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kvbf6")
+animation = &"idle"
+autoplay = "idle"
+frame = 1
+frame_progress = 0.211808
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 36)
+shape = SubResource("CapsuleShape2D_t7y4v")
+
+[node name="PlataformDetector" type="RayCast2D" parent="."]
+position = Vector2(0, 37)
+target_position = Vector2(0, 21)
+collision_mask = 8
+
+[node name="FloorDetectorLeft" type="RayCast2D" parent="."]
+position = Vector2(-15, 20)
+collision_mask = 24
+
+[node name="FloorDetectorRight" type="RayCast2D" parent="."]
+position = Vector2(14, 17)
+collision_mask = 24
