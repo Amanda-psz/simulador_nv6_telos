@@ -1,0 +1,7 @@
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\bin\Debug\simulador_nv6.exe.config
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\bin\Debug\simulador_nv6.exe
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\bin\Debug\simulador_nv6.pdb
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\obj\Debug\simulador_nv6.csproj.AssemblyReference.cache
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\obj\Debug\simulador_nv6.csproj.CoreCompileInputs.cache
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\obj\Debug\simulador_nv6.exe
+C:\Users\prsou\source\repos\simulador_nv6\simulador_nv6\obj\Debug\simulador_nv6.pdb
