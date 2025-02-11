@@ -1,6 +1,6 @@
-# Simulator Télos - Nível 6
+# Simulador Télos - Nível 6
 
-Projeto fictício utilizando a Godot Engine em que parte dos cenários e os personagens principais já foram criados com seus funcionamentos básicos, além de também ser feito de forma simbolica na linguagem C#. Assim, este projeto tem como objetivo a utilização dos pilares da programação orientada a objetos: abstração, encapsulamento, herança, polimorfismo, aplicados no contexto da Godot Engine, que é uma ferramenta para desenvolvimento de jogos, com a aplicação desse contexto nos inimigos do jogo de maneira simples. Projeto referente ao simulador nível 6, da trilha de programação, da formação do programa AfroDIgital da Télos.
+Projeto fictício utilizando a Godot Engine em que parte dos cenários e os personagens principais já foram criados com seus funcionamentos básicos, além de também ser feito de forma simbolica na linguagem C#. Assim, este projeto tem como objetivo a utilização dos pilares da programação orientada a objetos: abstração, encapsulamento, herança, polimorfismo, aplicados no contexto da Godot Engine, que é uma ferramenta para desenvolvimento de jogos, com a aplicação desse contexto nos inimigos do jogo de maneira simples. Projeto referente ao simulador nível 6, da trilha de programação, da formação do programa AfroDigital da Télos.
 
 ## Detalhes
 
